@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Document</title>
+</head>
+
+<body class="root">
+  <header class="header">
+    <nav class="nav">
+      <div class="nav__top">
+        <button class="mobile__menu"></button>
+        <div class="header__logo"></div>
+        <div class="header__city-box">
+          <div class="header__arrow"></div>
+          <p class="header__city">Москва</p>
+        </div>
+        <div class="header__input-box">
+          <div class="input__magnifier"></div>
+          <input type="text" class="header__input" placeholder="Учебное заведение, специальность или профессия">
+
+        </div>
+
+        <div class="header__profile">
+          <button class="header__like" type="button"></button>
+          <p class="header__like-count">1</p>
+          <p class="header__profile-name">Екатерина</p>
+          <div class="header__profile-avatar"></div>
+        </div>
+      </div>
+      <nav class="nav__bottom">
+        <a href=# class="header__link">Вузы</a>
+        <a href=# class="header__link">Колледжи</a>
+        <a href=# class="header__link">Техникумы</a>
+        <a href=# class="header__link">Училища</a>
+        <a href=# class="header__link">Специальности</a>
+        <a href=# class="header__link">Профессии</a>
+        <a href=# class="header__link">Отзывы</a>
+        <a href=# class="header__link">Учебным заведениям</a>
+        <a href=# class="header__link">Тест на профориентацию
+          <button type="button" class="header__move-button"></button>
+        </a>
+      </nav>
+    </nav>
+
+  </header>
+  <div class="popup">
+    <div class="popup__container">
+        <input class="popup__input" type="text" placeholder="Регион, город, населенный пункт" required> 
+        <button class="popup__input-clear-button"></button>
+        <div class="popup__box"></div>
+        <div class="popup__scroll">
+        </div>
+        <button class="popup__button-save popup__button-save_update-avatar" type="submit"
+          aria-label="Сохранить">СОХРАНИТЬ</button>
+      </form>
+    </div>
+  </div>
+  <template id="city">
+    <p class="popup__city"></p>
+  </template>
+  <template id="tag">
+    <div class="tag__box">
+      <p class="tag__city"></p>
+      <button class="tag__close-button"></button>
+    </div>
+  </template>
+
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
